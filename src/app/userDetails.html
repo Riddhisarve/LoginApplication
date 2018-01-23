@@ -1,0 +1,25 @@
+<div>
+    <button  (click)= "GetInputValue()"> For test </button>
+<table>
+    <thead>
+        <tr> <th colspan="4"> User Details </th></tr>
+        <tr>
+            <td>User Id </td>
+            <td> Id </td>
+            <td> title </td>
+            <td> Body </td>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let data of UseData">
+            
+         <tr *ngIf = "id == data.id">
+              <td> {{data.userId}}</td>
+              <td>{{data.id}} </td>
+              <td>{{data.title }}</td>
+              <td>{{data.body}}</td>
+          </tr>
+           </ng-container>
+    </tbody>
+
+</table></div>

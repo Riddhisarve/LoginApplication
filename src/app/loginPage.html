@@ -1,0 +1,17 @@
+<div class="container">
+         <div class="row">
+          <div class="col-sm-3">
+            <div class="form-login">
+              <h4> Welcome </h4>
+                        <label for="userId" > UserId </label>
+                         <input [(ngModel)]="user.id" id="id"
+                           class="validate" class="form-control input-sm chat-input" placeholder="userId"  >
+               <br/>
+               <div class="wrapper">
+                <span>{{errorMsg}}</span>
+                <button (click)="login()" 
+                    class="btn btn-primary btn-md" 
+                    type="submit" name="action">Login</button>
+                    </div>
+            </div>
+        </div>
